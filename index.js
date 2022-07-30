@@ -15,7 +15,7 @@ const port=8080
 
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
-app.use(cors())
+app.use(cors(["http://localhost:3000"]))
 
 
 const dburl="mongodb+srv://Prathmesh11:Prathmesh11@cluster0.o4lbk.mongodb.net/Aces"
